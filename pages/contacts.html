@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - adam</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html"><h1>adam</h1></a>
+                </div>
+                <nav class="main-nav">
+                    <a href="../index.html" class="nav-link">Главная</a>
+                    <a href="about.html" class="nav-link">О нас</a>
+                    <a href="catalog.html" class="nav-link">Каталог</a>
+                    <a href="contacts.html" class="nav-link">Контакты</a>
+
+                </nav>
+                <div class="header-icons">
+                    <button class="icon-btn" aria-label="Поиск">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="icon-btn" aria-label="Избранное">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="icon-btn" aria-label="Корзина">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Меню">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="contacts-page">
+        <div class="container">
+            <h1 class="page-title">Контакты</h1>
+            
+            <div class="contacts-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Телефон</h3>
+                            <p>+7 (777) 123-45-67</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@adam.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Время работы</h3>
+                            <p>Пн-Пт: 9:00-20:00<br>Сб-Вс: 10:00-18:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Адрес</h3>
+                            <p>г. Астана, ул. Мангилик Ел, С1</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Обратная связь</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Имя</label>
+                            <input type="text" id="name" class="form-input" placeholder="Введите ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-input" placeholder="Введите ваш email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Сообщение</label>
+                            <textarea id="message" class="form-input" rows="5" placeholder="Введите ваше сообщение" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-checkbox">
+                                <input type="checkbox" id="consent" required>
+                                <span>Согласен с политикой конфиденциальности</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footcont">
+                <div class="footnav">
+                    <h3>НАВИГАЦИЯ</h3>
+                    <div class="footlinks">
+                        <a href="about.html">О нас</a>
+                        <a href="catalog.html">Каталог</a>
+                        <a href="contacts.html">Контакты</a>
+                    </div>
+                </div>
+                <div class="footers">
+                    <div class="social-icons">
+                        <a href="#" aria-label="VK"><i class="fab fa-vk"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Введите ваш email, чтобы получать акции">
+                        <button class="btn btn-secondary">Подписаться</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footbot">
+                <p>© 2026 adam. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

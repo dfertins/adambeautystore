@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adam - Магазин уходовой косметики</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css"            >
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>adam</h1>
+                </div>
+                
+                <nav class="main-nav">
+                    <a href="index.html" class="nav-link active">Главная</a>
+                    <a href="pages/about.html" class="nav-link">О нас</a>
+                    <a href="pages/catalog.html" class="nav-link">Каталог</a>
+                    <a href="pages/contacts.html" class="nav-link">Контакты</a>
+                </nav>
+                
+                <div class="header-icons">
+                    <button class="icon-btn" aria-label="Поиск">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="icon-btn" aria-label="Избранное">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="icon-btn" aria-label="Корзина">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+                
+                <button class="mobile-menu-btn" aria-label="Меню">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-image">
+                <div class="slides-container">
+                    <div class="slide active">
+                        <div class="floating-product">
+                            <img src="images/2.png" alt="Акция 2 по цене 1">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="floating-product">
+                            <img src="images/3.png" alt="Новинки косметики">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="floating-product">
+                            <img src="images/4.png" alt="Популярные товары">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-text">
+                <h2 class="hero-title">2 по цене 1</h2>
+                <p class="hero-subtitle">Успей приобрести! Предложение действует до 1 апреля 2024 года</p>
+                <a class="btn btn-primary" href="pages/catalog.html">КУПИТЬ СЕЙЧАС</a>
+            </div>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+    </div>
+</section>
+
+        <section class="promo-cards">
+            <div class="container">
+                <div class="cards-grid">
+                    <div class="promo-card card-actions">
+                        <div class="card-overlay"></div>
+                        <img src="images/5.jpg" alt="Акции">
+                        <div class="card-label">акции</div>
+                    </div>
+                    <div class="promo-card card-new">
+                        <div class="card-overlay"></div>
+                        <img src="images/6.jpg" alt="Новинки">
+                        <div class="card-label">новинки</div>
+                    </div>
+                    <div class="promo-card card-brands">
+                        <div class="card-overlay"></div>
+                        <img src="images/7.jpg" alt="Бренды">
+                        <div class="card-label">бренды</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="best-sellers">
+            <div class="container">
+                <h2 class="section-title">хит продаж</h2>
+                <div class="products-grid" id="best-sellers-container">
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog-preview">
+            <div class="container">
+                <h2 class="section-title">каталог</h2>
+                <div class="catalog-grid ">
+                    <a href="pages/catalog.html?category=face" class="catalog-card face">
+                        <div class="card-overlay">
+                            <img src="images/12.png" alt="лицо">
+                        </div>
+                        <h3>Лицо</h3>
+                    </a>
+                    <a href="pages/catalog.html?category=hair" class="catalog-card hair">
+                        <div class="card-overlay">
+                            <img src="images/13.png" alt="волосы">
+                        </div>
+                        <h3>Волосы</h3>
+                    </a>
+                    <a href="pages/catalog.html?category=sets" class="catalog-card sets">
+                        <div class="card-overlay">
+                            <img src="images/14.png" alt="подарочные наборы">
+                        </div>
+                        <h3>Подарочные наборы</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <h2 class="section-title">отзывы</h2>
+                <div class="reviews-slider">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footcont">
+                <div class="footnav">
+                    <h3>НАВИГАЦИЯ</h3>
+                    <div class="footlinks">
+                        <a href="pages/about.html">О нас</a>
+                        <a href="pages/catalog.html">Каталог</a>
+                        <a href="pages/contacts.html">Контакты</a>
+                    </div>
+                </div>
+                <div class="footers">
+                    <div class="social-icons">
+                        <a href="#" aria-label="VK"><i class="fab fa-vk"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Введите ваш email, чтобы получать акции">
+                        <button class="btn btn-secondary">Подписаться</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footbot">
+                <p>© 2026 adam. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

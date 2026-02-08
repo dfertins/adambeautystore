@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - adam</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html"><h1>adam</h1></a>
+                </div>
+                <nav class="main-nav">
+                    <a href="../index.html" class="nav-link">Главная</a>
+                    <a href="about.html" class="nav-link">О нас</a>
+                    <a href="catalog.html" class="nav-link active">Каталог</a>
+                    <a href="contacts.html" class="nav-link">Контакты</a>
+                </nav>
+                <div class="header-icons">
+                    <button class="icon-btn" aria-label="Поиск">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="icon-btn" aria-label="Избранное">
+                        <i class="far fa-heart"></i>
+                        <span class="favorites-count"></span>
+                    </button>
+                    <button class="icon-btn" aria-label="Корзина">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count"></span>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Меню">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="catalog-page">
+        <div class="container">
+            <h1 class="page-title">Каталог товаров</h1>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">Все</button>
+                <button class="filter-btn" data-category="sale">Акции</button>
+                <button class="filter-btn" data-category="face">Лицо</button>
+                <button class="filter-btn" data-category="hair">Волосы</button>
+                <button class="filter-btn" data-category="sets">Подарочные наборы</button>
+                <button class="filter-btn" data-category="brands">Бренды</button>
+                <button class="filter-btn" data-category="new">Новинки</button>
+            </div>
+            
+            <div class="products-grid" id="catalog-container">
+            </div>
+            
+            <div class="cart-summary">
+                <h3>Итого: <span id="total-price">0</span> ₸</h3>
+                <button class="btn btn-primary" onclick="checkout()">Оформить заказ</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footcont">
+                <div class="footnav">
+                    <h3>НАВИГАЦИЯ</h3>
+                    <div class="footlinks">
+                        <a href="about.html">О нас</a>
+                        <a href="catalog.html">Каталог</a>
+                        <a href="contacts.html">Контакты</a>
+                    </div>
+                </div>
+                <div class="footers">
+                    <div class="social-icons">
+                        <a href="#" aria-label="VK"><i class="fab fa-vk"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Введите ваш email, чтобы получать акции">
+                        <button class="btn btn-secondary">Подписаться</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footbot">
+                <p>© 2026 adam. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
