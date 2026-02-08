@@ -101,7 +101,8 @@ DOM манипуляции
 Амантай Айзере
 
 GitHub
-
+https://github.com/dfertins/adambeautystore.git
 
 Лицензия
 Учебный проект
+
